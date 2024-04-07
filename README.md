@@ -9,5 +9,5 @@
 + dap
     + cpp
 
-+ leetnvim
++ leetcode
 
