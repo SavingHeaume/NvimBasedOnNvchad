@@ -1,9 +1,15 @@
 local M = {
   {
     "xeluxee/competitest.nvim",
-    dependencies = "MunifTanjim/nui.nvim",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+    },
     config = function()
-      require("competitest").setup()
+      require("competitest").setup({
+        runner_ui = {
+          interface = 'split',
+        },
+      })
     end,
   },
 }
