@@ -12,6 +12,7 @@ local M = {
         runner_ui = {
           interface = "split",
         },
+        testcase_use_single_file = true,
       }
     end,
   },
