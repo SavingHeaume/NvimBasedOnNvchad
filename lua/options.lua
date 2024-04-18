@@ -28,4 +28,8 @@ if is_windows then
   opt.shellxquote = ""
 end
 
+if g.neovide then
+  opt.guifont = "JetBrainsMono Nerd Font:h12"
+end
+
 -- add yours here!
