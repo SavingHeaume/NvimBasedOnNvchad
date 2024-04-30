@@ -26,6 +26,8 @@ if is_windows then
   opt.shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode"
   opt.shellquote = ""
   opt.shellxquote = ""
+else
+  opt.shell = "zsh"
 end
 
 if g.neovide then
