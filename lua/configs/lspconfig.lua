@@ -39,17 +39,13 @@ lspconfig["rust_analyzer"].setup {
   on_init = on_init,
 }
 
-local is_windows = package.config:sub(1, 1) == "\\"
+lspconfig["pyright"].setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  on_init = on_init,
+}
 
-if is_windows then
-  lspconfig["pyright"].setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-    on_init = on_init,
-    settings = {
-      python = {
-        pythonPath = "D:\\Tools\\Anaconda\\envs\\torch\\python",
-      },
-    },
-  }
-end
+-- local is_windows = package.config:sub(1, 1) == "\\"
+-- 
+-- if is_windows then
+-- end
