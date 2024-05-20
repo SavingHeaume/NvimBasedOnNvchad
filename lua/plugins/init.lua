@@ -14,6 +14,14 @@ return {
   },
 
   {
+    "nvim-treesitter/nvim-treesitter-context",
+    event = { "BufReadPost", "BufNewFile" },
+    opts = {
+      separator = '-',
+    },
+  },
+
+  {
     "sindrets/diffview.nvim",
     event = "User FilePost",
   },
