@@ -19,7 +19,7 @@ M.ui = {
 
   statusline = {
     -- default/vscode/vscode_colored/minimal
-    theme = "minimal",
+    theme = "vscode_colored",
   },
 }
 

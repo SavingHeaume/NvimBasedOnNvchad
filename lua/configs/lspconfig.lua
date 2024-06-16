@@ -24,7 +24,7 @@ lspconfig["clangd"].setup {
 lspconfig["cmake"].setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  on_init = on_attach,
+  on_init = on_init,
 }
 
 lspconfig["jdtls"].setup {

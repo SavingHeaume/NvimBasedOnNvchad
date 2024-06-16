@@ -7,8 +7,10 @@ if is_windows then
   home = "D:\\Project\\LeetCode"
   cache = "D:\\Project\\LeetCode"
 else
-  home = "/mnt/d/Project/LeetCode"
-  cache = "/mnt/d/Project/LeetCode"
+  -- home = "/mnt/d/Project/LeetCode"
+  -- cache = "/mnt/d/Project/LeetCode"
+  home = "~/Projects/LeetCode"
+  cache = "~/Projects/LeetCode"
 end
 
 local leetcode = {
