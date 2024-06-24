@@ -9,9 +9,6 @@ local plugins = {
       "nvim-neotest/nvim-nio",
     },
     config = function()
-      -- dap.listeners.after.event_initialized["dapui_config"] = function()
-      -- 	dapui.open()
-      -- end
       local dap, dapui = require("dap"), require("dapui")
       dapui.setup()
 
