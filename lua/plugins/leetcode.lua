@@ -4,13 +4,11 @@ local home = ""
 local cache = ""
 
 if is_windows then
-  home = "D:\\Project\\LeetCode"
-  cache = "D:\\Project\\LeetCode"
+  home = "D:\\Projects\\LeetCode"
+  cache = "D:\\Projecs\\LeetCode"
 else
-  -- home = "/mnt/d/Project/LeetCode"
-  -- cache = "/mnt/d/Project/LeetCode"
-  home = "~/Projects/LeetCode"
-  cache = "~/Projects/LeetCode"
+  home = "/mnt/d/Projects/LeetCode"
+  cache = "/mnt/d/Projects/LeetCode"
 end
 
 local leetcode = {
