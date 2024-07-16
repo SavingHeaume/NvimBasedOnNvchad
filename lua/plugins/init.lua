@@ -22,11 +22,13 @@ return {
   },
 
   {
+    -- git diff view 页面
     "sindrets/diffview.nvim",
     event = "User FilePost",
   },
 
   {
+    -- noice通知和悬浮命令行
     "folke/noice.nvim",
     event = "VeryLazy",
     opts = {
@@ -36,12 +38,17 @@ return {
         },
         signature = {
           enabled = false,
-        }
-      }
+        },
+      },
     },
     dependencies = {
       "MunifTanjim/nui.nvim",
       "rcarriga/nvim-notify",
     },
   },
+
+  {
+    event = "User FilePost",
+    "Pocco81/auto-save.nvim",
+  }
 }
