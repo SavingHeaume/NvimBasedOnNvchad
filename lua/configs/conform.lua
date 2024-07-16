@@ -2,7 +2,7 @@ local options = {
 	formatters_by_ft = {
 		lua = { "stylua" },
 		cpp = {"clang_format"},
-		--java = {"google-java-format"},
+    rust = {"rustfmt"},
 		java = {"clang_format"},
 	},
 }
