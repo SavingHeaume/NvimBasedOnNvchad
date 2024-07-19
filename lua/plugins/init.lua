@@ -48,7 +48,15 @@ return {
   },
 
   {
-    event = "User FilePost",
-    "Pocco81/auto-save.nvim",
-  }
+    -- auto-save自动保存
+    "okuuva/auto-save.nvim",
+    cmd = "ASToggle",
+    -- event = "User FilePost",
+    event = { "InsertLeave", "TextChanged" },
+    opts = {
+      execution_message = {
+        enabled = false,
+      }
+    },
+  },
 }
