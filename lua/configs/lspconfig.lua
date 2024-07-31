@@ -3,7 +3,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 local nvlsp = require "nvchad.configs.lspconfig"
 
-local servers = { "camke", "jdtls", "rust_analyzer", "pyright" }
+local servers = { "cmake", "jdtls", "rust_analyzer", "pyright" }
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
