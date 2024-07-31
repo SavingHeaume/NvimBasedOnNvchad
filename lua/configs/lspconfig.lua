@@ -1,15 +1,22 @@
-local configs = require "nvchad.configs.lspconfig"
-
-local on_attach = configs.on_attach
-local on_init = configs.on_init
-local capabilities = configs.capabilities
+require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
+local nvlsp = require "nvchad.configs.lspconfig"
+
+local servers = { "camke", "jdtls", "rust_analyzer", "pyright" }
+
+for _, lsp in ipairs(servers) do
+  lspconfig[lsp].setup {
+    on_attach = nvlsp.on_attach,
+    on_init = nvlsp.on_init,
+    capabilities = nvlsp.capabilities,
+  }
+end
 
 lspconfig["clangd"].setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  on_init = on_init,
+  on_attach = nvlsp.on_attach,
+  capabilities = nvlsp.capabilities,
+  on_init = nvlsp.on_init,
   cmd = {
     "clangd",
     "--all-scopes-completion",
@@ -20,32 +27,3 @@ lspconfig["clangd"].setup {
     --"--compile-commands-dir=./build/",
   },
 }
-
-lspconfig["cmake"].setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  on_init = on_init,
-}
-
-lspconfig["jdtls"].setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  on_init = on_init,
-}
-
-lspconfig["rust_analyzer"].setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  on_init = on_init,
-}
-
-lspconfig["pyright"].setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-  on_init = on_init,
-}
-
--- local is_windows = package.config:sub(1, 1) == "\\"
--- 
--- if is_windows then
--- end
