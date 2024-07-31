@@ -56,7 +56,7 @@ return {
     opts = {
       execution_message = {
         enabled = false,
-      }
+      },
     },
   },
 }
