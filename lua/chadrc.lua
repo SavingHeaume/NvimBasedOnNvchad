@@ -1,7 +1,16 @@
+-- This file needs to have same structure as nvconfig.lua
+-- https://github.com/NvChad/ui/blob/v2.5/lua/nvconfig.lua
+
+---@type ChadrcConfig
 local M = {}
 
 M.base46 = {
-  theme = "wombat",
+  theme = "onedark",
+
+  -- hl_override = {
+  -- 	Comment = { italic = true },
+  -- 	["@comment"] = { italic = true },
+  -- },
 }
 
 M.ui = {
@@ -36,14 +45,20 @@ M.ui = {
     },
   },
 }
-
 M.mason = {
-  cmd = true,
   pkgs = {
     "stylua",
     "lua-language-server",
-  }
+    "clangd",
+    "clang-format",
+    "cmake-language-server",
+    "codelldb",
 
+    "pyright",
+
+    "jdtls",
+    "rust-analyzer",
+  },
 }
 
 return M
