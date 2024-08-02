@@ -18,4 +18,24 @@ return {
     --   separator = '·',
     -- },
   },
+
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        -- defaults
+        "vim",
+        "lua",
+        "vimdoc",
+
+        -- low level
+        "cpp",
+        "c",
+        "python",
+        "java",
+        "markdown",
+        "rust",
+      },
+    },
+  },
 }
