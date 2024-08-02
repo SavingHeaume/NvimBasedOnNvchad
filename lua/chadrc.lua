@@ -37,4 +37,13 @@ M.ui = {
   },
 }
 
+M.mason = {
+  cmd = true,
+  pkgs = {
+    "stylua",
+    "lua-language-server",
+  }
+
+}
+
 return M
