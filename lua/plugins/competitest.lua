@@ -1,5 +1,3 @@
-local map = vim.keymap.set
-
 local M = {
   {
     "xeluxee/competitest.nvim",
