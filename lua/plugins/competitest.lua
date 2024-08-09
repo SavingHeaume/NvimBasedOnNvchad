@@ -1,6 +1,7 @@
 local M = {
   {
     "xeluxee/competitest.nvim",
+    cmd = "CompetiTest",
     --lazy = false,
     dependencies = {
       "MunifTanjim/nui.nvim",
@@ -11,6 +12,10 @@ local M = {
           interface = "split",
         },
         testcase_use_single_file = true,
+        template_file = {
+          cpp = vim.fn.stdpath "config" .. "/lua/plugins/template/competitest.cpp",
+        },
+        evaluate_template_modifiers = true,
       }
     end,
   },
