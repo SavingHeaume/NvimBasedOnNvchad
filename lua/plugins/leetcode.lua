@@ -5,7 +5,7 @@ local cache = ""
 
 if is_windows then
   home = "D:\\Projects\\LeetCode"
-  cache = "D:\\Projecs\\LeetCode"
+  cache = "D:\\Projects\\LeetCode"
 else
   home = "~/Projects/LeetCode"
   cache = "~/Projects/LeetCode"
