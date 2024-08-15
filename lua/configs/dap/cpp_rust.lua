@@ -4,12 +4,16 @@ function M.setup()
   local dap = require "dap"
   local dapui = require "dapui"
 
+  local install_root_dir = vim.fn.stdpath "data" .. "/mason"
+  local extension_path = install_root_dir .. "/packages/codelldb/extension/"
+  local codelldb_path = extension_path .. "adapter/codelldb"
+
   -- 配置DAP
   dap.adapters.codelldb = {
     type = "server",
     port = "${port}",
     executable = {
-      command = vim.fn.stdpath "data" .. "/mason/bin/codelldb",
+      command = codelldb_path,
       args = { "--port", "${port}" },
     },
   }
