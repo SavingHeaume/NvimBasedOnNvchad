@@ -9,7 +9,7 @@ local M = {
     config = function()
       require("competitest").setup {
         runner_ui = {
-          interface = "split",
+          interface = "popup",
         },
         testcase_use_single_file = true,
         template_file = {
