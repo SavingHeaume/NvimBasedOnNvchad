@@ -6,9 +6,6 @@ local M = {
     -- event = "User FilePost",
     event = { "InsertLeave", "TextChanged" },
     opts = {
-      execution_message = {
-        enabled = false,
-      },
     },
   },
 }
