@@ -13,7 +13,7 @@ end
 
 local leetcode = {
   {
-    "SavingHeaume/leetcode.nvim",
+    "kawre/leetcode.nvim",
     build = ":TSUpdate html",
     dependencies = {
       "nvim-telescope/telescope.nvim",
