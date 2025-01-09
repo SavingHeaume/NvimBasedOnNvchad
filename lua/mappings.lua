@@ -7,6 +7,11 @@ local map = vim.keymap.set
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>", { desc = "Escape insert mode" })
 
+-- FittenCode
+map("i", "<A-f>", function()
+  require("fittencode").accept_all_suggestions()
+end, { desc = "FittenCode accept all suggestions" })
+
 --DAP
 map("n", "<F5>", function()
   require("dap").continue()
