@@ -67,6 +67,7 @@ M.mason = {
     "codelldb",
 
     "pyright",
+    "autopep8",
 
     "jdtls",
     "rust-analyzer",

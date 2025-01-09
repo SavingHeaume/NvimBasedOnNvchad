@@ -4,6 +4,7 @@ local options = {
     cpp = { "clang-format" },
     rust = { "rustfmt" },
     java = { "clang-format" },
+    python = { "autopep8" },
   },
 
   -- format_on_save = {
